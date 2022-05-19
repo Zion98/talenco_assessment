@@ -704,9 +704,6 @@ footer .allrights {
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
-  header {
-    display: none;
-  }
   header .mid_side {
     display: none;
   }
@@ -772,6 +769,7 @@ footer .allrights {
     display: none;
   }
   .main_banner_section {
+    padding-top: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -780,14 +778,36 @@ footer .allrights {
   .main_banner_section .main_banner_img .backdrop {
     display: none;
   }
+  .main_banner_section .main_banner_title p:first-child {
+    font-size: 1.5rem;
+  }
+  .main_banner_section .banner_apply_btn {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .banner_underhead .banner_title {
+    font-size: 1.4rem;
+  }
   .banner_cards_box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .banner_cards_box .banner_cards {
+    margin-top: -3rem;
+  }
   .banner_cards_box .banner_cards .banner_img_div {
     width: 100%;
+  }
+  .banner_cards_box .first_banner {
+    margin-top: unset;
+  }
+  .banner_cards_box .first_banner .fulltime_extra {
+    width: 100px;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
   }
   .platform_card {
     padding: 1rem 0;
@@ -795,8 +815,11 @@ footer .allrights {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .platform_card .platform_card_img {
+    width: 200px;
+  }
   .platform_card .card_content {
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
   .circle_extra {
     display: none;

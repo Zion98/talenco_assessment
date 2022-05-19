@@ -22,6 +22,8 @@ $link-fontweight: 600;
   height: 100%;
 }
 
+// START OF HEADER SECTION
+
 header {
   padding: 1rem 0;
   background: #e8f0ff;
@@ -72,7 +74,9 @@ header {
     }
   }
 }
+//END OF HEADER SECTION
 
+//START OF BANNER SECTION
 .banner {
   background: rgb(232, 240, 255);
   background: linear-gradient(
@@ -108,7 +112,6 @@ header {
 
   .main_banner_img {
     position: relative;
-    // width: 600px;
 
     .backdrop {
       position: absolute;
@@ -134,7 +137,7 @@ header {
 
 //END OF BANNER SECTION
 
-//SECTION UNDERHEAD
+////START OF  SECTION UNDERHEAD
 
 .banner_underhead {
   position: relative;
@@ -246,6 +249,10 @@ header {
     }
   }
 }
+
+//END OF BANNER UNDERHEAD
+
+////START OF ONE PLATFORM SECTION
 
 .one_platform {
   background-image: url("./images/platformbg.svg");
@@ -360,6 +367,10 @@ header {
   bottom: -4rem;
 }
 
+//END OF HEADER SECTION
+
+//START OF TRUSTED SECTION
+
 .trusted {
   padding: 5rem 0;
   background: linear-gradient(
@@ -453,7 +464,9 @@ header {
     position: relative;
   }
 }
+//END OF TRUSTED SECTION
 
+//START OF MATCHED SECTION
 .matched {
   padding-top: 5rem;
   text-align: center;
@@ -477,12 +490,10 @@ header {
   }
   .matched_img_box {
     position: relative;
-    // width: 400px;
     z-index: 333;
   }
   .matchers {
     width: 100%;
-    // width:900px;
     margin: 0 auto;
   }
   .main_img {
@@ -533,6 +544,9 @@ header {
   }
 }
 
+//END OF HEADER SECTION
+
+//START OF FOOTER SECTION
 footer {
   position: relative;
   z-index: 999;
@@ -578,6 +592,10 @@ footer {
   }
 }
 
+//END OF FOOTER SECTION
+
+////CONTAINER SECTION
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -600,9 +618,10 @@ footer {
   }
 }
 
+//END OF CONTAINER STYLES
+
 @media (min-width: 769px) and (max-width: 1300px) {
-  header {
-    display: none;
+  header{
     .mid_side {
       display: none;
     }
@@ -680,18 +699,48 @@ footer {
   }
 
   .main_banner_section {
+    padding-top: 1rem;
     flex-direction: column-reverse;
 
     .main_banner_img .backdrop {
       display: none;
+    }
+
+    .main_banner_title p:first-child {
+      font-size: 1.5rem;
+    }
+
+    .banner_apply_btn {
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+  }
+
+  .banner_underhead {
+    .banner_title {
+      font-size: 1.4rem;
     }
   }
 
   .banner_cards_box {
     flex-direction: column;
     .banner_cards {
+      margin-top: -3rem;
       .banner_img_div {
         width: 100%;
+      }
+    }
+
+    .first_banner {
+      margin-top: unset;
+    }
+
+    .first_banner {
+      .fulltime_extra {
+        width: 100px;
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
       }
     }
   }
@@ -701,8 +750,13 @@ footer {
     position: static;
     flex-wrap: wrap;
 
+    .platform_card_img {
+
+        width:200px;
+    }
+
     .card_content {
-      padding-left: 3rem;
+      padding-left: 2rem;
     }
   }
 
